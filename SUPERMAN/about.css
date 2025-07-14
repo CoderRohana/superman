@@ -1,0 +1,124 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #222;
+    border-bottom: 2px solid #e50914;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #00aaff;
+}
+
+/* About Section */
+.about-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.superman-symbol {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #e50914;
+}
+
+.intro {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #ccc;
+}
+
+/* Image Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Extra Info */
+.extra-info {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.extra-info h2 {
+    font-size: 1.5rem;
+    color: #e50914;
+    margin-bottom: 0.5rem;
+}
+
+.extra-info p {
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .extra-info {
+        text-align: center;
+    }
+}
